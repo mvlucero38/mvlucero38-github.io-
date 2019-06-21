@@ -31,18 +31,21 @@ public class ConversionDeMonedas {
     static final String SELECT_LENGUAGE = "Please choose language - Elige idioma \n"
             + "(1) English   (2)Espanol ";
 
+    
     // Input amount to be converted//
     static final String CURRENCY_AMOUNT_TO_CONVERT_SPANISH = "Introduce la cantidad a convertir ";
     static final String CURRENCY_AMOUNT_TO_CONVERT_ENGLISH = "Input the amount to be converted ";
 
+    
     // From USD to other currency and visceversa//
     static final String SELECT_MENU_ENG = "Hello, please choose an option:\n "
-            + "Select (1) to convert from USD to other Currency\n"
-            + "Select (2) to convert from  other currency to USD\n";
+            + "Select (1) to convert from USD to other Currency \n"
+            + "Select (2) to convert from  other currency to USD \n";
     static final String SELECT_MENU_ESP = "Quieres convertir USD to otras monedas o visceversa?\n"
-            + "Elige (1)para convertir USD a otras monedas\n"
-            + "Elige  (2) para convertir de otras monedas a USD\n";
+            + "Elige (1)para convertir USD a otras monedas \n"
+            + "Elige (2) para convertir de otras monedas a USD \n";
 
+    
 // Currency convertion menus//
     static final String CURRENCY_LIST_ENGLISH_FROM_USD
             = "Please pick a currency to convert to \n"
@@ -114,7 +117,7 @@ public class ConversionDeMonedas {
         System.out.print(SELECT_LENGUAGE);
         userLeng = myScanner.nextInt();
 
-        if (userLeng == 1) {// if English
+        if (userLeng == 1) {
             System.out.println(SELECT_MENU_ENG);
             chooseMenu = myScanner.nextInt();
 
@@ -122,7 +125,7 @@ public class ConversionDeMonedas {
                 System.out.println(CURRENCY_LIST_ENGLISH_FROM_USD);
                 convertionType = myScanner.nextInt();
 
-            } else if (chooseMenu == 2) { // if Spanish
+            } else if (chooseMenu == 2) { 
                 System.out.println(CURRENCY_LIST_ENGLISH_TO_USD);
                 convertionType = myScanner.nextInt();
             }
@@ -138,11 +141,11 @@ public class ConversionDeMonedas {
             System.out.println(SELECT_MENU_ESP);
             chooseMenu = myScanner.nextInt();
 
-            if (chooseMenu == 1) { // if English
+            if (chooseMenu == 1) { 
                 System.out.println(CURRENCY_LIST_SPANISH_FROM_USD);
                 convertionType = myScanner.nextInt();
 
-            } else if (chooseMenu == 2) {// If Spanish
+            } else if (chooseMenu == 2) {
                 System.out.println(CURRENCY_LIST_SPANISH_TO_USD);
                 convertionType = myScanner.nextInt();
             }
